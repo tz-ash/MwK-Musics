@@ -29,7 +29,7 @@ U=USERNAME
 CHAT=Config.CHAT
 
 
-HOME_TEXT = "<b>Helo, [{}](tg://user?id={})\n\n• Iam A Bot Project by MwK MusicS\n• I Can Manage Group VC's\n\n• Hit /help to know about available commands.</b>"
+HOME_TEXT = "<b>Helo, [{}](tg://user?id={})\n\n• Iam A Bot Project by @kidbots\n• I Can Manage Group VC's\n\n• Hit /help to know about available commands.</b>"
 HELP = """
 🎧 <b>I Can Play Musics On VoiceChats 🤪</b>
 
@@ -58,7 +58,7 @@ HELP = """
 • `/update` __Update Current Settings n Restarts the Bot__
 
 © Powered By 
-[ __@mwklinks | @redbullfed__ ]
+[ __@kidbots | @tzkid__ ]
 """
 
 
@@ -69,17 +69,17 @@ async def start(client, message):
         [
         InlineKeyboardButton("❔ How To Use Me ❔", callback_data="help"),
                 ],[
-                InlineKeyboardButton('📢 Updates', url='https://t.me/mwklinks'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/redbullfed')
+                InlineKeyboardButton('📢 Updates', url='https://t.me/kibots'),
+                InlineKeyboardButton('💬 Support', url='https://t.me/tzkid')
                 ],[
-                InlineKeyboardButton('🤖 Developer', url='https://t.me/shamilnelli'),
-                InlineKeyboardButton('🎧 Songs', url='https://t.me/mwksongs')
+                InlineKeyboardButton('🤖 Developer', url='https://t.me/kid_of_telegram'),
+                InlineKeyboardButton('🎧 Songs', url='https://t.me/tzkid')
                 ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/shamilhabeebnelli/mwk-musics'),
+                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/tz-ash'),
     ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_photo(photo="https://telegra.ph/file/a3937c3ddc19bb3300d89.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
+    await message.reply_photo(photo="https://telegra.ph/file/bd1e6bc47b3e7e37276f3.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
     await message.delete()
 
 
@@ -87,15 +87,15 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-                InlineKeyboardButton('📢 Updates', url='https://t.me/mwklinks'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/redbullfed')
+                InlineKeyboardButton('📢 Updates', url='https://t.me/kidbots'),
+                InlineKeyboardButton('💬 Support', url='https://t.me/tzkid')
                 ],[
-                InlineKeyboardButton('🤖 Developer', url='https://t.me/shamilnelli'),
-                InlineKeyboardButton('🎧 Songs', url='https://t.me/mwksongs')
+                InlineKeyboardButton('🤖 Developer', url='https://t.me/kid_of_telegram'),
+                InlineKeyboardButton('🎧 Songs', url='https://t.me/tzkid')
                 ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/shamilhabeebnelli/mwk-musics'),
+                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/tz-ash'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_photo(photo="https://telegra.ph/file/a3937c3ddc19bb3300d89.jpg", caption=HELP, reply_markup=reply_markup)
+    await message.reply_photo(photo="https://telegra.ph/file/bd1e6bc47b3e7e37276f3.jpg", caption=HELP, reply_markup=reply_markup)
     await message.delete()
